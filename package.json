@@ -1,8 +1,8 @@
 {
-  "name": "cra-template-react-boat",
+  "name": "poetry",
   "version": "0.1.2",
   "license": "MIT",
-  "homepage": "https://yaolx.github.io/react-boat",
+  "homepage": "https://yaolx.github.io/poetry/",
   "engines": {
     "yarn": ">=1.22.10",
     "node": ">=14.18.0"
