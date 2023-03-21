@@ -11,9 +11,7 @@ import styles from './style/index.module.less'
 function Home(): JSX.Element {
   const [list, setList] = useState<Issue[]>([])
   const getList = async () => {
-    console.log('2222')
     const data = await getIssues()
-    console.log('###', data)
     setList(orderBy(data, 'number'))
     setTimeout(() => {
       // @ts-ignore
@@ -34,7 +32,6 @@ function Home(): JSX.Element {
   useEffect(() => {
     getList()
   }, [])
-  console.log('###', list)
   return (
     <div className={styles['book-viewport']}>
       <div className={styles['container']}>
